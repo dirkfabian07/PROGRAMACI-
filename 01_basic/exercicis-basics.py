@@ -7,6 +7,10 @@ print("\nExercici 1: Imprimir missatges")
 print("Escriu un programa que imprimeixi el teu nom i la teva ciutat en línies separades.")
 
 ### Completa aquí
+nom= Dirk
+ciutat= Barcelona
+print(nom)
+print(ciutat)
 
 print("--------------")
 
@@ -20,6 +24,12 @@ e = None
 
 ### Completa aquí
 
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+
 print("--------------")
 
 print("\nExercici 3: Conversió de tipus")
@@ -27,7 +37,12 @@ print("Converteix la cadena \"12345\" a un enter i després a un float.")
 print("Converteix el float 3.99 a un enter. Què passa?")
 
 ### Completa aquí
-
+x= str(12345)
+x= int(x)
+x=float(x)
+c= 3.99
+c=int(c)
+#Quan ho convertim en un enter
 print("--------------")
 
 print("\nExercici 4: Variables")
