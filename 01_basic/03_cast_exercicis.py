@@ -1,13 +1,38 @@
 ###
-# Exercicis - conversió de tipus (casting)
-# Completa els exercicis següents convertint dades entre tipus.
+# Exercicis - variables
+# Completa els exercicis següents creant i utilitzant variables.
 ###
 
 # Exercici 1
-# Demana a l'usuari quants paquets ha rebut un encaminador. Converteix el valor
-# introduït a un nombre enter, suma-hi 1200 paquets i mostra el total.
+# Crea variables per desar el nom d'un encaminador, la seva ubicació,
+# el nombre de ports i si està encès. Mostra les dades en una frase
+# utilitzant una f-string.
+# Exercici 1
 
+nombre = "Router1"
+ubicacion = "Barcelona"
+puertos = 8
+encendido = True
+
+print(f"El router {nombre} está ubicado en {ubicacion}, tiene {puertos} puertos y está encendido: {encendido}")
 # Exercici 2
-# Demana a l'usuari la velocitat d'una connexió en Mbps. Converteix el valor
-# introduït a un nombre decimal i calcula la velocitat equivalent en MB/s
-# dividint-la per 8. Mostra el resultat.
+# Crea variables per desar els GB inclosos en un pla de dades mòbils
+# i els GB consumits. Calcula quants GB queden i mostra el resultat.
+# Després, actualitza el consum amb un valor nou i torna a calcular
+# quants GB queden.
+# Exercici 2
+
+GB_totales = 20
+GB_consumidos = 7
+
+GB_restantes = GB_totales - GB_consumidos
+
+print("Los GB restantes son:", GB_restantes)
+
+# Actualizamos el consumo
+
+GB_consumidos = 12
+
+GB_restantes = GB_totales - GB_consumidos
+
+print("Ahora quedan:", GB_restantes, "GB")
