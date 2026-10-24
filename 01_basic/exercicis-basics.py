@@ -42,7 +42,7 @@ x= int(x)
 x=float(x)
 c= 3.99
 c=int(c)
-#Quan ho convertim en un enter
+#Quan ho convertim en un enter, s'elimina la part decimal, en aquest cas només quedaria el 3
 print("--------------")
 
 print("\nExercici 4: Variables")
@@ -54,6 +54,8 @@ print("Utilitza f-strings per imprimir una presentació.")
 #age = 38
 
 ### Completa aquí
+nom, edat, ciutat, alçada= "Dirk", 19, Barcelona, 1.75
+print(f"Hola! Em dic {nom}, tinc {edat} anys, faig {alçada} metres i vis a {ciutat} ")
 
 print("--------------")
 
@@ -63,6 +65,10 @@ print("2. Arrodoneix el nombre amb round()")
 print("3. Fes la divisió entera entre el nombre resultant i el nombre 2")
 print("4. El resultat hauria de ser 1")
 
+### Completa aquí
+resultat= int(round(3.1416))
+resultat= resultat/2
+print("Divisió de PI arrodonit entre 2:", resultat)
 print("--------------")
 
 print("\nExercici 6: Conversor de temperatura")
@@ -71,6 +77,9 @@ print("Converteix aquest valor a Fahrenheit amb la fórmula: F = (C * 9/5) + 32"
 print("Mostra els dos valors amb un missatge clar.")
 
 ### Completa aquí
+temperatura= float(input("La temperatura en Celsius es:"))
+F= (temperatura * 9/5) + 32
+print(f"La temeperatura en Celsius es {temperatura} y en Fahrenheit es {F}")
 
 print("--------------")
 
@@ -80,7 +89,9 @@ print("Calcula quant és la propina i el total final que s'ha de pagar.")
 print("Mostra els resultats amb 2 decimals.")
 
 ### Completa aquí
-
+compte= float(input("Total compte:"))
+percentatge_propina= float(input("La propina en %:"))
+propina= compte * percentatge_propina/100
 print("--------------")
 
 print("\nExercici 8: Validador de contrasenya simple")
@@ -89,3 +100,9 @@ print("Comprova si té almenys 8 caràcters.")
 print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
 ### Completa aquí
+contrasenya= str(input("Contrasenya:"))
+if len(contrasenya) >= 8:
+    print("Contrasenya vàlida")
+else:
+    print("Contrasenya no vàlida")
+    
